@@ -36,7 +36,7 @@ function resolveBaseOptions(config: ExtensionRunConfig): esbuild.BuildOptions {
 			'path': 'path-browserify',
 		};
 		options.define = {
-			'process.platform': JSON.stringify('web'),
+			'process.platform': JSON.stringify
 			'process.env': JSON.stringify({}),
 			'process.env.BROWSER_ENV': JSON.stringify('true'),
 		};
